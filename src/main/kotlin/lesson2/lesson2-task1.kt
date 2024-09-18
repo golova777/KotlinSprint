@@ -2,7 +2,8 @@ package org.example.lesson2
 
 fun main() {
 
-    val meanEnglishGrade: Float = (3 + 4 + 3 + 5) / 4f
+    val numberOfStudents = 4
+    val meanEnglishGrade: Float = (3.0f + 4.0f + 3.0f + 5.0f) / numberOfStudents.toFloat()
 
     println(meanEnglishGrade)
 }
