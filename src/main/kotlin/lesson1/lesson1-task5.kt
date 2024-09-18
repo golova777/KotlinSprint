@@ -1,16 +1,14 @@
 package org.example.lesson1
 
+const val SECONDS_IN_HOUR: Int = 3600
+const val SECONDS_IN_MINUTE: Int = 60
+const val SECONDS_IN_SPACE_GAGARIN: Int = 6480
+
 
 fun main() {
-
-    val secondsInHour: Int = 3600
-    val secondsInMinute: Int = 60
-
-    val secondsInSpaceGagarin: Int = 6480
-
-    val hoursInSpace: Int = secondsInSpaceGagarin / secondsInHour
-    val minutesRemainder: Int = (secondsInSpaceGagarin % secondsInHour) / secondsInMinute
-    val secondsRemainder: Int = secondsInSpaceGagarin % secondsInMinute
+    val hoursInSpace: Int = SECONDS_IN_SPACE_GAGARIN / SECONDS_IN_HOUR
+    val minutesRemainder: Int = (SECONDS_IN_SPACE_GAGARIN % SECONDS_IN_HOUR) / SECONDS_IN_MINUTE
+    val secondsRemainder: Int = SECONDS_IN_SPACE_GAGARIN % SECONDS_IN_MINUTE
 
     println(String.format("%02d:%02d:%02d", hoursInSpace, minutesRemainder, secondsRemainder))
 
