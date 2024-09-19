@@ -15,4 +15,5 @@ fun main() {
         $userFactorBase х 8 = ${userFactorBase * 8}
         $userFactorBase х 9 = ${userFactorBase * 9}
     """.trimIndent())
+
 }
