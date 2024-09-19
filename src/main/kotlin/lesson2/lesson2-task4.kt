@@ -9,9 +9,9 @@ fun main() {
     val crystalOreValue = 7
     val ironOreValue = 11
 
-    val buffedCrystalOreValue = crystalOreValue * (buffEffectValue / PERCENTAGE_DIVIDER)
-    val buffedIronOreValue = ironOreValue * (buffEffectValue / PERCENTAGE_DIVIDER)
-
+    val buffEffectFactor = (buffEffectValue / PERCENTAGE_DIVIDER)
+    val buffedCrystalOreValue = crystalOreValue * buffEffectFactor
+    val buffedIronOreValue = ironOreValue * buffEffectFactor
 
     println("Бафф кристаллической руды: ${buffedCrystalOreValue.toInt()}")
     println("Бафф Железной руды: ${buffedIronOreValue.toInt()}")
