@@ -7,7 +7,6 @@ fun main() {
     var userLastName = "Андреева"
 
     var userAge = 20
-
     println("$userLastName $userName $userMiddleName, $userAge")
 
     userLastName = "Сидорова"
