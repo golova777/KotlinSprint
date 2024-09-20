@@ -10,8 +10,8 @@ fun main() {
     val trainRouteTimeMinutes = 475
 
     val minutesSum = trainDepartureTimeMinutes + trainRouteTimeMinutes
-    val trainArraivingHour = trainDepartureTimeHours + ( minutesSum / SECONDS_IN_MINUTE )
+    val trainArrivingHour = trainDepartureTimeHours + ( minutesSum / SECONDS_IN_MINUTE )
     val trainArrivingMinute = minutesSum % SECONDS_IN_MINUTE
 
-    println(String.format("%02d:%02d", trainArraivingHour, trainArrivingMinute))
+    println(String.format("%02d:%02d", trainArrivingHour, trainArrivingMinute))
 }
