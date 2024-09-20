@@ -4,7 +4,6 @@ const val PERCENTAGE_DIVIDER_ = 100
 
 
 fun main() {
-
     val buffEffectValue = 20.0f
     val crystalOreValue = 7
     val ironOreValue = 11
