@@ -3,6 +3,7 @@ package org.example.lesson4
 const val OPTIMAL_HUMIDITY = 20
 const val RISKY_SEASON = "зима"
 
+
 fun main() {
     var isSunnyToday: Boolean = true
     var isTentOpen: Boolean = true
