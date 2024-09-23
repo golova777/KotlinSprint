@@ -10,8 +10,9 @@ fun main() {
     print("Благоприятны ли метеоусловия? (да/нет): ")
     var isMeteoGood: Boolean = readln() == "да"
 
-    var canShipTravel: Boolean = (!isHullBreached && (crewNumber >= 55 && crewNumber <= 70) && provisionBoxes > 50)
-                                  || (crewNumber == 70 && isMeteoGood && provisionBoxes >= 50)
+    var canShipTravel: Boolean = (!isHullBreached && (crewNumber >= 55 && crewNumber <= 70) &&
+                                 provisionBoxes > 50) ||
+                                 (crewNumber == 70 && isMeteoGood && provisionBoxes >= 50)
 
     println("Может ли корабль отправиться в плавание? $canShipTravel")
 }
